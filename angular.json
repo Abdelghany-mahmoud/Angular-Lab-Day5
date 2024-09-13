@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Day3": {
+    "Day5": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/day3",
+            "outputPath": "dist/day5",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Day3:build:production"
+              "buildTarget": "Day5:build:production"
             },
             "development": {
-              "buildTarget": "Day3:build:development"
+              "buildTarget": "Day5:build:development"
             }
           },
           "defaultConfiguration": "development"

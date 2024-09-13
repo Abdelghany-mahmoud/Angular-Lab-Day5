@@ -1,0 +1,21 @@
+<div class="container col-10">
+  @if(user){
+  <div class="card-body">
+    <h5 class="card-title">{{user.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Username : {{user.username}}</li>
+    <li class="list-group-item"> Email : {{user.email}}</li>
+    <li class="list-group-item">Phone : {{user.phone}}</li>
+    <li class="list-group-item">Address : {{user.address.street}} - {{user.address.suite}} - {{user.address.city}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="http://{{user.website}}" class="btn btn-primary">visit my website</a>
+  </div>
+  }
+  @else {
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  }
+  </div>

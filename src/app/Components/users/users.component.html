@@ -1,0 +1,12 @@
+<div class="container m-auto d-flex align-items-center justify-content-evenly flex-wrap" style="gap: 25px;">
+  @if(users){
+    @for (user of users; track user.id) {
+      <app-user [userdata]="user" class="card col-4" />
+    }
+  }
+  @else {
+    <div class="spinner-border d-flex text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  }
+</div>
